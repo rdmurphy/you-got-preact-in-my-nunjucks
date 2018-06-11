@@ -3,6 +3,10 @@
 {% block content %}
 <h1>Preact Components in Nunjucks<h1>
 
+{#
+  Where we use the global helper - the first parameter is the path to the
+  component, and the second parameter is the context.
+#}
 {{ renderPreactComponent('Demo', { foo: 'bar' }) }}
 
 {% endblock content %}

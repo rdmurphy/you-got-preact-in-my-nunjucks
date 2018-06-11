@@ -23,8 +23,8 @@ const env = nunjucks.configure('./templates', {
 function renderPreactComponent(p, context = {}) {
   // We piece together the path based on what's passed in, it's important this
   // path matches what was provided to babel-register. Also - I normally use
-  // `path.join` instead because I've already resolved the path, but for this
-  // demo I resolve here.
+  // `path.join` instead because I've already resolved the root path, but for
+  // this demo I resolve here.
   const componentPath = path.resolve('./components', p);
   // Now we can require the component - because its within the directory we
   // set up babel-register to watch for, the babel plugins kick in and convert
