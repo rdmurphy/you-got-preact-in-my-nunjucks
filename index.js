@@ -7,10 +7,6 @@ const nunjucks = require('nunjucks');
 const { h } = require('preact');
 const render = require('preact-render-to-string');
 
-// Import our customized babel-register, which only activates when requiring
-// from the `components` directory
-require('./babel-register');
-
 // "Maybe resolve with default?" helper
 const interopDefault = m => (m && m.default ? m.default : m);
 
